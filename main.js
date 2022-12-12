@@ -9,9 +9,9 @@ createApp({
   },
   methods: {
     getApi(){
-      axios.get(this.apiUrl).then(res =>{
-        this.albums = res.data;
-      })
+      axios.get(this.apiUrl).then((result) =>{
+        this.albums = result.data;
+      });
     }
-  }
+  },
 }).mount('#app');

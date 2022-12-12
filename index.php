@@ -33,7 +33,7 @@
       v-for="(disk, index) in albums"
       :key="index"
       class="card">
-        <img :src="disk.poster" :alt="disk.title">
+        <img :src="disk.poster" alt="disk.title">
         <h4>{{disk.title}}</h4>
         <p>{{disk.author}}</p>
         <h5>{{disk.year}}</h5>
@@ -41,6 +41,6 @@
     </div>
   </main>
 
-  <script src="./main.js"></script>
 </body>
+<script src="./main.js"></script>
 </html>
